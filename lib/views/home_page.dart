@@ -29,6 +29,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('La Huellita'),
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -54,7 +57,7 @@ class _HomePageState extends State<HomePage> {
                           ? "08/2022"
                           : cardExpiryDateController.text,
                       cardHolder: cardHolderNameController.text.isEmpty
-                          ? "Card Holder"
+                          ? "Nombre Poseedor"
                           : cardHolderNameController.text.toUpperCase(),
                       cardNumber: cardNumberController.text.isEmpty
                           ? "XXXX XXXX XXXX XXXX"
@@ -144,7 +147,7 @@ class _HomePageState extends State<HomePage> {
                     border: InputBorder.none,
                     contentPadding:
                         EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-                    hintText: 'Card Number',
+                    hintText: 'Numero de la Tarjeta',
                     hintStyle: TextStyle(
                       color: Colors.grey,
                       fontSize: 16,
@@ -187,7 +190,7 @@ class _HomePageState extends State<HomePage> {
                     border: InputBorder.none,
                     contentPadding:
                         EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-                    hintText: 'Full Name',
+                    hintText: 'Nombre Completo',
                     hintStyle: TextStyle(
                       color: Colors.grey,
                       fontSize: 16,
@@ -330,7 +333,7 @@ class _HomePageState extends State<HomePage> {
                   });
                 },
                 child: Text(
-                  'Add Card'.toUpperCase(),
+                  'Agregar Tarjeta'.toUpperCase(),
                   style: const TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.w500,

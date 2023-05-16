@@ -39,7 +39,7 @@ class CardAlertDialog extends StatelessWidget {
             Padding(
               padding: EdgeInsets.all(8.0),
               child: Text(
-                'Card Added Successfully',
+                'Tarjeta Agregada Exitosamente',
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
@@ -50,7 +50,7 @@ class CardAlertDialog extends StatelessWidget {
             Padding(
               padding: EdgeInsets.all(8.0),
               child: Text(
-                'You can now use your card to make payments',
+                'Ahora puedes usar tu tarjeta para realizar tus pagos',
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
               ),
             ),
